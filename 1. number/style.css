@@ -29,6 +29,13 @@ body{
     flex-direction: column;
 }
 
+.main-content form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main-content label{
     margin-bottom: 7px;
     font-size: 18px;

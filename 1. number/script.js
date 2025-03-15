@@ -1,17 +1,24 @@
-// const convert = () => {
+const convert = () => {
 
-//     var value = document.getElementById("dama").value;
-//     var far = document.getElementById("dam").value;
+    var value = parseFloat(document.getElementById("dama").value);
+    let selected = document.querySelector('input[name="unit"]:checked');
 
-//     console.log(far)
+    var result
 
-//     var result;
+    if (!selected || isNaN(value)) {
+        console.log("Error: Please enter a valid number and select a unit.");
+        return;
+    }
 
-//     if(far == on){
-//          return (result = ( value - 32) / 1.8)
-//     }else{
-//         console.log("Error")
-//     }
-// }
 
-// console.log(result)
+
+    if(selected.value == "far"){
+        result = ( value - 32) / 1.8
+    }else if(selected.value == "cel"){
+        result = (value * 1.8) + 32
+    }
+    else{
+         console.log("error")
+    }
+    console.log(result)
+}
