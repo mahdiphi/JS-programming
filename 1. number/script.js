@@ -2,7 +2,6 @@ const convert = () => {
 
     var value = parseFloat(document.getElementById("dama").value);
     let selected = document.querySelector('input[name="unit"]:checked');
-
     var result
 
     if (!selected || isNaN(value)) {
@@ -20,5 +19,7 @@ const convert = () => {
     else{
          console.log("error")
     }
-    console.log(result)
+
+    document.getElementById("result").textContent = `Converted: ${result.toFixed(2)}`;
+    
 }

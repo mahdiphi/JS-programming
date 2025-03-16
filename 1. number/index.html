@@ -7,27 +7,28 @@
     <title>title</title>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <h1>Convert Celsius <=> Fahrenheit</h1>
+    <div class="container">
+      <div class="converter">
+        <h1>Celsius <=> Fahrenheit</h1>
 
-          <label for="dama">Enter the dama: </label>
-          <input type="number" name="dama" id="dama" />
+        <label for="dama">Enter the temperature: </label>
+        <input type="number" name="dama" id="dama" />
 
-          <div class="main-checkbox">
-            <div>
-              <input type="radio" name="unit" id="cel" value="cel"/>
-              <label for="cel">cel</label>
-            </div>
-
-            <div>
-              <input type="radio" name="unit" id="far" value="far"/>
-              <label for="far">far</label>
-            </div>
+        <div class="unit-selection">
+          <div>
+            <input type="radio" name="unit" id="cel" value="cel" />
+            <label for="cel">Celsius</label>
           </div>
 
-          <button onclick="convert()">Submit</button>
+          <div>
+            <input type="radio" name="unit" id="far" value="far" />
+            <label for="far">Fahrenheit</label>
+          </div>
+        </div>
 
+        <button onclick="convert()">Submit</button>
+
+        <p id="result"></p>
       </div>
     </div>
 
