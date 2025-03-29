@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span{
+    font-size: 30px;
+}
+.timer-spans{
+    margin-bottom: 15px;
+}
+
+label{
+    margin-right: 5px;
+    font-size: 18px;
+}
+input{
+    margin-right: 5px;
+}
+
+.timer-input{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+#start-btn{
+    background-color:green;
+    margin-right: 10px;
+}
+#stop-btn{
+    background-color: red;
+    
+}
+
+@media screen and (max-width: 750px) {
+  .timer-input{
+    display: flex;
+    flex-direction: column;
+  }
+}
